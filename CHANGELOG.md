@@ -2,6 +2,51 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/matsp/material-components-vue/compare/v1.2.0...v2.0.0) (2020-12-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* **icon-button:** data-toggle-* are deprecated since 1.0.0 in mdc-web. All associated props are removed. To have an icon button toggle, use toggleOn and toggleOff slots instead.
+* width now becomes a string type prop
+* ariaDescribedby is deprecated, use selectedTextId instead. The component will generate aria-describedby automatically based on the label id and the selectedTextId
+
+Simplify the demos and make most of the props reactive.
+* **text-field:** now helper text and character counter should be placed in the helper line component
+
+* test(text-field): update snapshots and lint files
+
+* feat(text-field): add slot characterCounter for textarea
+
+update docs
+
+* test(text-field): update snapshots
+
+### Features
+
+* add auto-init ([#600](https://github.com/matsp/material-components-vue/issues/600)) ([42e9920](https://github.com/matsp/material-components-vue/commit/42e9920ca69fcffc31dac1b3b3cfabf69e913fd2))
+* **tabs:** Use instances initialized from the parent tab bar ([#443](https://github.com/matsp/material-components-vue/issues/443)) ([0dce9d7](https://github.com/matsp/material-components-vue/commit/0dce9d742b79bdf27ec4ea9dc14eab3ae38327ff)), closes [#441](https://github.com/matsp/material-components-vue/issues/441) [#442](https://github.com/matsp/material-components-vue/issues/442) [#440](https://github.com/matsp/material-components-vue/issues/440) [#304](https://github.com/matsp/material-components-vue/issues/304) [#303](https://github.com/matsp/material-components-vue/issues/303)
+* **text-field:** optimize instantiation process ([#490](https://github.com/matsp/material-components-vue/issues/490)) ([001a0dd](https://github.com/matsp/material-components-vue/commit/001a0dd8caea881a40e47a1086a902292ad35baa))
+* **top-app-bar:** add start and end slots; add tag prop for fixed adjust ([#456](https://github.com/matsp/material-components-vue/issues/456)) ([512827d](https://github.com/matsp/material-components-vue/commit/512827da0d9a16406400b6226d84d67165beb552))
+
+
+### Bug Fixes
+
+* **chips:** update chips ([#552](https://github.com/matsp/material-components-vue/issues/552)) ([2c2f96d](https://github.com/matsp/material-components-vue/commit/2c2f96db96daab06319a824b0ec1c3ecc37db5b3))
+* **dialog:** provide ripples for action buttons ([#572](https://github.com/matsp/material-components-vue/issues/572)) ([2dcbddd](https://github.com/matsp/material-components-vue/commit/2dcbddd2f6f44d561246b96f1f36a03a8f31d8e7))
+* **docs:** remove deprecated demos ([#550](https://github.com/matsp/material-components-vue/issues/550)) ([2a9d627](https://github.com/matsp/material-components-vue/commit/2a9d62744d327345188ad6009b48569bb311a8ed))
+* **drawer:** use provide/inject in instantiation ([#560](https://github.com/matsp/material-components-vue/issues/560)) ([38973cb](https://github.com/matsp/material-components-vue/commit/38973cb79787f30b9e53ed572ce638d2011ef4b5))
+* **icon-button:** update icon button components ([#539](https://github.com/matsp/material-components-vue/issues/539)) ([b68eb5e](https://github.com/matsp/material-components-vue/commit/b68eb5ef2eac3b5f6e39a5644c3d82bb62c520e9)), closes [#531](https://github.com/matsp/material-components-vue/issues/531)
+* **top-app-bar:** re-instantiate when needed ([#565](https://github.com/matsp/material-components-vue/issues/565)) ([caf5680](https://github.com/matsp/material-components-vue/commit/caf5680fa34936ac251f75c65efb3b303df16441)), closes [#564](https://github.com/matsp/material-components-vue/issues/564)
+* using provide/inject in form field input assigning ([#549](https://github.com/matsp/material-components-vue/issues/549)) ([9325295](https://github.com/matsp/material-components-vue/commit/9325295308788b4c3b75c61fe334d8c52d0f5916))
+* **fab:** allow reactive switching between basic and extended style ([#533](https://github.com/matsp/material-components-vue/issues/533)) ([78d55cd](https://github.com/matsp/material-components-vue/commit/78d55cdc4442a5efb185dd400a0ca8e8c0741e16))
+* **image-list:** linting files ([#464](https://github.com/matsp/material-components-vue/issues/464)) ([4727f3a](https://github.com/matsp/material-components-vue/commit/4727f3af769aa9e584f073a51c8fe3b1ef9ff2be))
+* **list:** Prevent accessing selectedIndex when this.mdcList is undefined ([#484](https://github.com/matsp/material-components-vue/issues/484)) ([e54b47c](https://github.com/matsp/material-components-vue/commit/e54b47c4bacd5ff2186560f46325136942ea3831))
+* **menu:** use provide/inject in instantiation ([#534](https://github.com/matsp/material-components-vue/issues/534)) ([f2ec2ba](https://github.com/matsp/material-components-vue/commit/f2ec2bae021d932224f709487a9dfc79f48e70ae)), closes [#480](https://github.com/matsp/material-components-vue/issues/480)
+* **text-field:** support v-model.number ([#547](https://github.com/matsp/material-components-vue/issues/547)) ([d1a3714](https://github.com/matsp/material-components-vue/commit/d1a37142a1e5f8ba6cd65e3f4a8c0110a83bb605)), closes [#515](https://github.com/matsp/material-components-vue/issues/515)
+* Restore broken fullwidth textarea with label ([#523](https://github.com/matsp/material-components-vue/issues/523)) ([28fd54c](https://github.com/matsp/material-components-vue/commit/28fd54c348ef1ef1e2326c311cd819f231a0638f)), closes [#509](https://github.com/matsp/material-components-vue/issues/509)
+* update select component ([#532](https://github.com/matsp/material-components-vue/issues/532)) ([c77f6e7](https://github.com/matsp/material-components-vue/commit/c77f6e7fdf6a35fa6c1611dc0d88b4eee00dde32)), closes [#394](https://github.com/matsp/material-components-vue/issues/394) [#436](https://github.com/matsp/material-components-vue/issues/436)
+
 ## [1.2.0](https://github.com/matsp/material-components-vue/compare/v1.2.0-alpha.0...v1.2.0) (2019-09-25)
 
 ## [1.2.0-alpha.0](https://github.com/matsp/material-components-vue/compare/v1.1.0...v1.2.0-alpha.0) (2019-09-25)
