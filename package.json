@@ -1,6 +1,6 @@
 {
   "name": "material-components-vue",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Material Design components for Vue.js",
   "author": "Mats Pfeiffer <mats.pfeiffer@googlemail.com>",
   "license": "MIT",
@@ -31,10 +31,10 @@
     "test:updateSnapshot": "npm run test -- --updateSnapshot"
   },
   "dependencies": {
-    "material-components-web": "3.2.0"
+    "material-components-web": "^8.0.0"
   },
   "peerDependencies": {
-    "vue": "^2.6.10",
+    "vue": "^3.0.2",
     "vue-template-compiler": "^2.6.10"
   },
   "devDependencies": {
