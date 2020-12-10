@@ -20,7 +20,7 @@ module.exports = {
     fab: path.resolve(components + '/fab/index.js'),
     'floating-label': path.resolve(components + '/floating-label/index.js'),
     'form-field': path.resolve(components + '/form-field/index.js'),
-    'grid-list': path.resolve(components + '/grid-list/index.js'),
+    // 'grid-list': path.resolve(components + '/grid-list/index.js'),
     icon: path.resolve(components + '/icon/index.js'),
     'image-list': path.resolve(components + '/image-list/index.js'),
     'icon-button': path.resolve(components + '/icon-button/index.js'),
